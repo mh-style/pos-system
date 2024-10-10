@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+.jua-regular {
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+span.dot-1 {
+    position: relative;
+    top: -50%;
+    left: 0%;
+}
+span.dot-1:before {
+    content: "";
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background-color: rgba(164, 222, 2, 1);
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(0%, -50%);
+}
+span.dot-1:after {
+    content: "";
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    background-color: rgba(118, 186, 27, 1);
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-125%, 85%);
+}
+span.dot-2 {
+    position: relative;
+    bottom: 0%;
+    right: -50%;
+}
+span.dot-2:before {
+    content: "";
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background-color: rgba(104, 187, 89, 1);
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-33%, -146%);
+}
+span.dot-2:after {
+    content: "";
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    background-color: rgba(172, 223, 135, 1);
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-125%, 85%);
+}
+
+.ve-form-body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(123, 221, 125, 1);
+    position: relative;
+}
+.ve-form-body::after {
+    content: " ";
+    background: url('../images/form-bg.png');
+    overflow: hidden;
+    /* display: inline; */
+    position: absolute;
+    z-index: 99;
+    background-size: 40%;
+    background-position: center;
+    transform: translate(0%, -50%) rotate(50deg);
+    top: 50%;
+    background-repeat: no-repeat;
+    left: -35%;
+    width: 100%;
+    height: 100%;
+}
+.ve-form-body::before {
+    content: " ";
+    background: url('../images/form-bg.png');
+    overflow: hidden;
+    /* display: inline; */
+    position: absolute;
+    z-index: 99;
+    background-size: 40%;
+    background-position: center;
+    transform: translate(0%, -50%) rotate(40deg);
+    top: 50%;
+    background-repeat: no-repeat;
+    right: -42%;
+    width: 100%;
+    height: 100%;
+}
+.ve-container {
+    background-color: rgba(107, 203, 105, 0.5); /* Light white background */
+    border-radius: 20px;
+    padding: 40px 20px;
+    width: 40%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 9999;
+}
+
+.ve-container .header {
+    margin-bottom: 30px;
+}
+
+
+.logo {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.ve-container h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #2D7034;
+    margin-bottom: 10px;
+}
+
+.ve-container p {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.ve-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Add space between the .ve-btns */
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.ve-buttons .ve-btn {
+    padding: 10px 20px;
+    font-size: 25px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 60%;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.ve-buttons .admin-btn {
+    background-color: #4CAF50;
+}
+
+.ve-buttons .shop-btn {
+    background-color: #4CAF50;
+}
+
+.ve-buttons .ve-btn:hover {
+    background-color: #45a049;
+}
+
+/** Admin **/
+
+.ve-admin .logo {
+    width: 120px;
+    height: 120px;
+}
+.ve-admin .ve-container h1 {
+    font-family: "Jua", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+.ve-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+  /* Style the custom select */
+.ve-form-select {
+    position: relative;
+    width: 60%;
+    text-align: left;
+    color: gray;
+  }
+  
+  /* Style the selected item */
+  .ve-form-select .select-selected {
+    background-color: #f0f0f0;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style the items inside the dropdown */
+  .ve-form-select .select-items {
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    width: 100%;
+    z-index: 99;
+    top: 100%;
+  }
+  
+  /* Hidden by default */
+  .ve-form-select .select-hide {
+    display: none;
+  }
+  
+  /* Hover styles for list items */
+  .ve-form-select .select-items li {
+    padding: 10px;
+    cursor: pointer;
+    list-style: none;
+  }
+  
+  /* Change background on hover */
+  .ve-form-select .select-items li:hover {
+    background-color: #4CAF50;
+    color: #ffffff;
+  }
+  
+  
+.ve-form .ve-form-control {
+    width: 60%;
+    font-size: 22px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+.ve-admin .ve-buttons .ve-btn {
+    
+    width: 50%;
+}
+.ve-admin .ve-buttons {
+    width: 75%;
+}
+
+/** /Admin **/
+
+@media (max-width: 768px) {
+
+    body{
+        width: 100%;
+    }
+    .ve-form-body {
+        
+        position: relative;
+    }
+
+    .ve-form-body::after {
+        
+        background-size: 50% ;
+        left: -40%;
+    }
+    .ve-form-body::before {
+        background-size: 50%;
+        right: -40%;
+    }
+    .ve-form .ve-form-control{
+        font-size: 18px;
+    }
+    .ve-form-select {
+        font-size: 18px;
+    }
+    .ve-container {
+        width: 60%;
+    }
+    .ve-container h1 {
+        font-size: 50px;
+    }
+    .logo {
+        width: 120px;
+        height: 120px;
+    }
+    .ve-container p {
+        font-size: 20px;
+    }
+    .ve-admin .ve-buttons .ve-btn {
+    
+        font-size: 18px;
+    }
+}
+@media (max-width: 576px) {
+
+    body{
+        width: 100%;
+    }
+    .ve-form-body {
+        
+        position: relative;
+    }
+
+    .ve-form-body::after {
+        
+        background-size: 50% ;
+        left: -40%;
+    }
+    .ve-form-body::before {
+        background-size: 70%;
+        right: -62%;
+    }
+    .ve-container {
+        width: 70%;
+    }
+    .ve-container h1 {
+        font-size: 33px;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+    .ve-container p {
+        font-size: 15px;
+    }
+    .ve-admin .ve-buttons .ve-btn {
+        font-size: 14px;
+    }
+    .ve-form-select,
+    .ve-form .ve-form-control{
+        font-size: 16px;
+    }
+    span.dot-1:before {
+        content: "";
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        background-color: rgba(164, 222, 2, 1);
+        position: absolute;
+        border-radius: 50%;
+        transform: translate(0%, -50%);
+    }
+    span.dot-1:after {
+        content: "";
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+        background-color: rgba(118, 186, 27, 1);
+        position: absolute;
+        border-radius: 50%;
+        transform: translate(-88%, 100%);
+    }
+    span.dot-2 {
+        position: relative;
+        top: -25%;
+        right: -50%;
+    }
+    span.dot-2:before {
+        content: "";
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        background-color: rgba(104, 187, 89, 1);
+        position: absolute;
+        border-radius: 50%;
+        transform: translate(-6%, -50%);
+    }
+    span.dot-2:after {
+        content: "";
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+        background-color: rgba(172, 223, 135, 1);
+        position: absolute;
+        border-radius: 50%;
+        transform: translate(-30%, 223%);
+    }
+}

@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    }
+    
+    .ve-body {
+    background: url('../assets/images/لال.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    }
+    .ve-body:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(172 223 135 / 79%);
+    }
+    .container {
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+    max-width: 800px;
+    max-height: 800px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .logo-center {
+    position: absolute;
+    z-index: 10;
+    }
+    
+    .logo {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    }
+    
+    .circle {
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 4px solid green; */
+    }
+    .circle:before {
+    content: "";
+    position: relative;
+    width: 70%;
+    height: 85%;
+    border-radius: 50%;
+    border: 8px solid rgba(0, 100, 21, 1);
+    }
+    .item {
+    position: absolute;
+    text-align: center;
+    width: 140px;
+    height: 140px;
+    transition: transform 0.3s ease;
+    color: rgb(0 100 21 / 75%);
+    border-radius: 10px;
+    background-color: rgba(142, 222, 129, 1);
+    padding: 10px 15px;
+    transition: background-color ease-in-out .8s;
+    }
+    
+    .item img {
+    width: 60px;
+    height: 60px;
+    }
+    
+    .item p {
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+    }
+    
+    /* Positioning the items in a circular fashion */
+    #shops {
+    top: 0;
+    left: 30%;
+    transform: translate(-50%, 0%);
+    color: rgb(0 100 21 / 75%);
+    }
+    #shops p {
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    font-size: 13px;
+    left: 50%;
+    color: rgba(0, 100, 21, 1);
+    font-style: italic;
+    transform: translate(-50%, 33%);
+    transition: top ease .8s !important;
+    }
+    #shops:hover p {
+    /* position: absolute; */
+    /* transform: translate(0%, 0%); */
+    top: 65%;
+    font-size: 18px;
+    color: #fff;
+    transition: top ease .8s;
+    }
+    #shops i {
+    font-size: 110px;
+    transition: font-size ease-in-out .8s !important;
+    
+    }
+    #shops:hover i {
+    font-size: 90px;
+    transition: font-size ease-in-out .8s;
+    }
+    #order {
+    top: 0%;
+    right: 13%;
+    transform: translate(-50%, 0%);
+    }
+    #order:hover p {
+        bottom: 20%;
+        transform: translate(-100%, 60%);
+        transition: bottom ease .8s;
+    }
+    
+    #order p {
+        position: absolute;
+        bottom: 50%;
+        right: 0%;
+        font-weight: bold;
+        transform: translate(-70%, 0);
+        font-style: italic;
+        font-size: 18px;
+        transition: bottom ease .8s !important;
+    }
+    
+    #order i {
+        font-size: 110px;
+        margin: 0;
+        padding: 0;
+        transition: font-size ease .8s;
+    }
+    
+    #order:hover i {
+        font-size: 90px;
+        transition: font-size ease .8s;
+    }
+    #dealer {
+    bottom: 42%;
+    right: 0;
+    transform: translate(-50%, 50%);
+    }
+    #dealer p {
+        position: absolute;
+        font-weight: bold;
+        font-style: italic;
+        right: 50%;
+        top: 0;
+        transform: translate(50%, 0%);
+        color: rgba(0, 100, 21, 1);
+        transition: top ease .8s !important;
+    }
+    
+    #dealer i {
+        top: 20%;
+        position: relative;
+        transition: top ease .8s !important;
+    }
+    
+    #dealer:hover p {
+        top: 70%;
+        color: #fff;
+        transition: top ease .8s;
+    }
+    #dealer:hover i {
+        top: 0%;
+        transition: top ease .8s;
+    }
+    #products {
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+    }
+    #products i {
+        font-size: 100px;
+        position: relative;
+        top: 15%;
+        right: 0;
+        transition: font-size, top ease .8s !important;
+    }
+    
+    #products p {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-weight: bold;
+        transform: translate(50%, 0%);
+        font-style: italic;
+        transition: top ease .8s !important;
+    }
+    
+    #products:hover i {
+        font-size: 90px;
+        top: 0;
+        transition: font-size,top ease .8s;
+    }
+    
+    #products:hover p {
+        top: 70%;
+        transition: top ease .8s;
+    }
+    #order-statement {
+    bottom: 0;
+    left: 47%;
+    transform: translate(-50%, 0%);
+    }
+    #order-statement i {
+        font-size: 120px;
+        transition: font-size ease .8s !important;
+    }
+    
+    #order-statement p {
+        position: absolute;
+        top: 15%;
+        font-size: 10px;
+        left: 0;
+        font-weight: bold;
+        font-style: italic;
+        transform: translate(40%, 10%);
+        transition: top ease .8s !important;
+    }
+    
+    #order-statement:hover p {
+        top: 75%;
+        font-size: 14px;
+        transform: translate(10%, 0%);
+        transition: top ease .8s;
+    }
+    
+    #order-statement:hover i {
+        font-size: 90px;
+        transition: font-size ease .8s;
+    }
+    /* Hover effects */
+    .item:hover {
+    transform: scale(1.2);
+    z-index: 20;
+    background-color: rgb(4 169 39);
+    transition: background-color ease-in-out .8s;
+    color: #fff !important;
+    }
+    
+    .item:hover i {
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3));
+    }
+    
